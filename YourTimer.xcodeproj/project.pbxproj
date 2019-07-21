@@ -56,15 +56,39 @@
 		3715D08322DCCDEE0024D9E8 /* YourTimer */ = {
 			isa = PBXGroup;
 			children = (
+				37F312B122DE2FB000F22B98 /* View */,
+				37F312B022DE2F9B00F22B98 /* Controller */,
+				37F312B222DE300A00F22B98 /* Model */,
 				3715D08422DCCDEE0024D9E8 /* AppDelegate.swift */,
-				3715D08622DCCDEE0024D9E8 /* ViewController.swift */,
-				3715D08822DCCDEE0024D9E8 /* Main.storyboard */,
 				3715D08E22DCCDEF0024D9E8 /* Assets.xcassets */,
 				3715D09022DCCDEF0024D9E8 /* LaunchScreen.storyboard */,
 				3715D09322DCCDEF0024D9E8 /* Info.plist */,
-				3715D08B22DCCDEE0024D9E8 /* YourTimer.xcdatamodeld */,
 			);
 			path = YourTimer;
+			sourceTree = "<group>";
+		};
+		37F312B022DE2F9B00F22B98 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3715D08622DCCDEE0024D9E8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37F312B122DE2FB000F22B98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3715D08822DCCDEE0024D9E8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37F312B222DE300A00F22B98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3715D08B22DCCDEE0024D9E8 /* YourTimer.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +123,11 @@
 				TargetAttributes = {
 					3715D08022DCCDEE0024D9E8 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
