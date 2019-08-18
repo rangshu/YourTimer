@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		3715D08D22DCCDEE0024D9E8 /* YourTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3715D08B22DCCDEE0024D9E8 /* YourTimer.xcdatamodeld */; };
 		3715D08F22DCCDEF0024D9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3715D08E22DCCDEF0024D9E8 /* Assets.xcassets */; };
 		3715D09222DCCDEF0024D9E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3715D09022DCCDEF0024D9E8 /* LaunchScreen.storyboard */; };
+		371BDD9B2305AFC800AE9785 /* recordTimesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371BDD9A2305AFC800AE9785 /* recordTimesCell.swift */; };
+		37E5C3592301819800FE3704 /* RecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5C3582301819800FE3704 /* RecordsTableViewController.swift */; };
+		E8C6B250F97C90F329A4FB5F /* Pods_YourTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E021F0C8A777FDEE4CFFFD /* Pods_YourTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E021F0C8A777FDEE4CFFFD /* Pods_YourTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3715D08122DCCDEE0024D9E8 /* YourTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3715D08422DCCDEE0024D9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3715D08622DCCDEE0024D9E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		3715D08E22DCCDEF0024D9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3715D09122DCCDEF0024D9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3715D09322DCCDEF0024D9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371BDD9A2305AFC800AE9785 /* recordTimesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordTimesCell.swift; sourceTree = "<group>"; };
+		37E5C3582301819800FE3704 /* RecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsTableViewController.swift; sourceTree = "<group>"; };
+		61C3B4874FF06FA582F33874 /* Pods-YourTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTimer.release.xcconfig"; path = "Target Support Files/Pods-YourTimer/Pods-YourTimer.release.xcconfig"; sourceTree = "<group>"; };
+		E48FCDF9082196E16BBB69A6 /* Pods-YourTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourTimer.debug.xcconfig"; path = "Target Support Files/Pods-YourTimer/Pods-YourTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C6B250F97C90F329A4FB5F /* Pods_YourTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				3715D08322DCCDEE0024D9E8 /* YourTimer */,
 				3715D08222DCCDEE0024D9E8 /* Products */,
+				D3E553CEB457A529E40D4AE5 /* Pods */,
+				747A6FE13949723B12F6BB69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3715D08622DCCDEE0024D9E8 /* ViewController.swift */,
+				37E5C3582301819800FE3704 /* RecordsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3715D08822DCCDEE0024D9E8 /* Main.storyboard */,
+				371BDD9A2305AFC800AE9785 /* recordTimesCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +104,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		747A6FE13949723B12F6BB69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E021F0C8A777FDEE4CFFFD /* Pods_YourTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3E553CEB457A529E40D4AE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E48FCDF9082196E16BBB69A6 /* Pods-YourTimer.debug.xcconfig */,
+				61C3B4874FF06FA582F33874 /* Pods-YourTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3715D09622DCCDF00024D9E8 /* Build configuration list for PBXNativeTarget "YourTimer" */;
 			buildPhases = (
+				FE1DBB86E1B0B51B9FAA0023 /* [CP] Check Pods Manifest.lock */,
 				3715D07D22DCCDEE0024D9E8 /* Sources */,
 				3715D07E22DCCDEE0024D9E8 /* Frameworks */,
 				3715D07F22DCCDEE0024D9E8 /* Resources */,
+				8980814CF3A7285BD3B410FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,11 +194,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8980814CF3A7285BD3B410FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YourTimer/Pods-YourTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YourTimer/Pods-YourTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YourTimer/Pods-YourTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1DBB86E1B0B51B9FAA0023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YourTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3715D07D22DCCDEE0024D9E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371BDD9B2305AFC800AE9785 /* recordTimesCell.swift in Sources */,
+				37E5C3592301819800FE3704 /* RecordsTableViewController.swift in Sources */,
 				3715D08D22DCCDEE0024D9E8 /* YourTimer.xcdatamodeld in Sources */,
 				3715D08722DCCDEE0024D9E8 /* ViewController.swift in Sources */,
 				3715D08522DCCDEE0024D9E8 /* AppDelegate.swift in Sources */,
@@ -313,6 +389,7 @@
 		};
 		3715D09722DCCDF00024D9E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48FCDF9082196E16BBB69A6 /* Pods-YourTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +408,7 @@
 		};
 		3715D09822DCCDF00024D9E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C3B4874FF06FA582F33874 /* Pods-YourTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
